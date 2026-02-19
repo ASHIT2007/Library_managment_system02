@@ -39,17 +39,20 @@
     "rxjs/webSocket": "https://esm.sh/rxjs@^7.8.2/webSocket?conditions=es2015",
     "rxjs/testing": "https://esm.sh/rxjs@^7.8.2/testing?conditions=es2015",
     "rxjs/fetch": "https://esm.sh/rxjs@^7.8.2/fetch?conditions=es2015",
-    "@angular/compiler": "https://esm.sh/@angular/compiler@^21.1.5?external=rxjs",
-    "@angular/platform-browser": "https://esm.sh/@angular/platform-browser@^21.1.5?external=rxjs",
-    "@angular/core": "https://esm.sh/@angular/core@^21.1.5?external=rxjs",
-    "@angular/common": "https://esm.sh/@angular/common@^21.1.5?external=rxjs",
-    "@angular/forms": "https://esm.sh/@angular/forms@^21.1.5?external=rxjs",
-    "@angular/router": "https://esm.sh/@angular/router@^21.1.5?external=rxjs"
+    "@angular/compiler": "https://esm.sh/@angular/compiler@^19.1.5?external=rxjs",
+    "@angular/platform-browser": "https://esm.sh/@angular/platform-browser@^19.1.5?external=rxjs",
+    "@angular/core": "https://esm.sh/@angular/core@^19.1.5?external=rxjs",
+    "@angular/common": "https://esm.sh/@angular/common@^19.1.5?external=rxjs",
+    "@angular/forms": "https://esm.sh/@angular/forms@^19.1.5?external=rxjs",
+    "@angular/router": "https://esm.sh/@angular/router@^19.1.5?external=rxjs",
+    "vite": "https://esm.sh/vite@^7.3.1?external=rxjs"
   }
 }
 </script>
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased min-h-screen">
   <app-root></app-root>
+  <!-- Load the main application entry point so Vite and the browser can execute it -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
